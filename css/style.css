@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /* Resetando as informações do navegador. */
+    /* O simbolo "*" aplica para a página toda! */
+}
+
+html{
+    font-family: arial;
+    /* Aplicar fonte para a página toda. */
+}
+
+header{
+    background: linear-gradient(to top, #ffb067, #e04f02);
+    color: #f6f6f2;
+    width: 100%;
+    font-size: 100%;
+    padding: 1rem;
+
+    /* É necessário focar nas medidas, como: Widht, Margin, Padding, Font-Size. REM (ou ROOT) = 
+    Unidade de medida relativa ao tamanho da fonte do elemento raiz do documento (1 rem = 16 pixel) */
+    /* Margin: Espaço externo ao redor de um elemento. Espaço de fora de um elemento. Afeta a distância entre o elemento
+    e os elementos próximos */
+    /* Padding: Espaço interno entre o conteúdo de um elemento e sua borda. Espaço dentro de um elemento. Aumenta a área
+    interna do elemento, empurrando o conteúdo para dentro.*/
+    /* É possivel configurar individualmente cada lado da margin, padding e bottom.*/
+}
+
+/* body{
+    background-color: #dcdcdc;
+} */
+
+footer{
+    background: linear-gradient(to bottom, #ffb067, #e04f02);
+    color: #f6f6f2;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo{
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: justify; /* Alinhamento justificado para melhor visualização do texto. */
+    max-width: 80%;
+}
+
+figure{
+    text-align: center;
+}
+
+.imagens-site{
+    border-radius: 20px;
+    width: 90%;
+    height: 30%;
+}
+@media (min-width: 280px) and (max-width: 450px){ /* Inserindo a responsividade nas imagens */
+    .imagens-site{
+        border-radius: 20px;
+        width: 90%;
+        height: 30%;
+    }
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #eb5c00;
+    color: #ffb067
+}
+h2{
+    font-size: 1.9rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+
+#grid-conteudo{
+    background-color: #dcdcdc;
+}
+
+.grid{
+    display: grid; /* Mostra como os conteúdos serão dispostos na página. */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* FR - Ver formatação da tela*/
+    grid-gap: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid div{
+    background-color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+
+nav{
+    text-align: right;
+    font-size: 1rem;
+    word-spacing: 10px;
+    margin-right: 5%;
+    padding-bottom: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #aa4011;
+}
